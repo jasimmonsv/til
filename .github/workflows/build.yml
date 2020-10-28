@@ -18,7 +18,7 @@ jobs:
     - name: Checkout til-db
       uses: actions/checkout@v2
       with:
-        repository: simonw/til-db
+        repository: jasimmonsv/til-db
         path: til-db
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN_FOR_PUSH }}
     - name: Set up Python
@@ -47,7 +47,7 @@ jobs:
     - name: Download previous database unless REBUILD in commit message
       if: |-
         !contains(github.event.head_commit.message, 'REBUILD')
-      run: curl --fail -o main/til.db https://raw.githubusercontent.com/simonw/til-db/main/til.db
+      run: curl --fail -o main/til.db https://raw.githubusercontent.com/jasimmonsv/til-db/main/til.db
       continue-on-error: true
     - name: Build database
       env:
@@ -77,7 +77,7 @@ jobs:
         git config --global user.name "README-bot"
         git diff --quiet || (git add README.md && git commit -m "Updated README")
         git push
-    - name: Save til.db to simonw/til-db
+    - name: Save til.db to jasimmonsv/til-db
       run: |-
         cd til-db
         cp ../main/til.db .
@@ -88,24 +88,3 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Deploy Datasette using Zeit Now
-      env:
-        NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
-      run: |-
-        cd main
-        datasette publish now til.db \
-          --token $NOW_TOKEN \
-          --branch main \
-          --project simon-til \
-          --metadata metadata.yaml \
-          --static static:static \
-          --install datasette-template-sql \
-          --install "datasette-atom>=0.7" \
-          --install datasette-json-html \
-          --install beautifulsoup4 \
-          --install datasette-debug-asgi \
-          --install "datasette-graphql>=0.12" \
-          --install datasette-media \
-          --plugins-dir plugins \
-          --template-dir templates \
-          --public
