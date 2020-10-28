@@ -4,7 +4,7 @@ My Today I Learned snippets. Inspired by [jbranchaud/til](https://github.com/jbr
 
 Search these TILs at https://til.simonwillison.net/
 
-<!-- count starts -->69<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
+<!-- count starts -->88<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
 
 <!-- index starts -->
 ## github-actions
@@ -17,6 +17,8 @@ Search these TILs at https://til.simonwillison.net/
 * [Updating a Markdown table of contents with a GitHub Action](https://github.com/simonw/til/blob/main/github-actions/markdown-table-of-contents.md) - 2020-07-22
 * [Using grep to write tests in CI](https://github.com/simonw/til/blob/main/github-actions/grep-tests.md) - 2020-08-19
 * [Skipping a GitHub Actions step without failing](https://github.com/simonw/til/blob/main/github-actions/continue-on-error.md) - 2020-08-22
+* [Open a debugging shell in GitHub Actions with tmate](https://github.com/simonw/til/blob/main/github-actions/debug-tmate.md) - 2020-09-14
+* [Talking to a PostgreSQL service container from inside a Docker container](https://github.com/simonw/til/blob/main/github-actions/service-containers-docker.md) - 2020-09-18
 
 ## python
 
@@ -30,6 +32,9 @@ Search these TILs at https://til.simonwillison.net/
 * [Password hashing in Python with pbkdf2](https://github.com/simonw/til/blob/main/python/password-hashing-with-pbkdf2.md) - 2020-07-13
 * [How to call pip programatically from Python](https://github.com/simonw/til/blob/main/python/call-pip-programatically.md) - 2020-08-11
 * [Outputting JSON with reduced floating point precision](https://github.com/simonw/til/blob/main/python/json-floating-point.md) - 2020-08-21
+* [Debugging a Click application using pdb](https://github.com/simonw/til/blob/main/python/debug-click-with-pdb.md) - 2020-09-03
+* [Understanding option names in Click](https://github.com/simonw/til/blob/main/python/click-option-names.md) - 2020-09-22
+* [Explicit file encodings using click.File](https://github.com/simonw/til/blob/main/python/click-file-encoding.md) - 2020-10-16
 
 ## zeit-now
 
@@ -44,6 +49,8 @@ Search these TILs at https://til.simonwillison.net/
 * [Using LD_PRELOAD to run any version of SQLite with Python](https://github.com/simonw/til/blob/main/sqlite/ld-preload.md) - 2020-06-17
 * [SQLite BLOB literals](https://github.com/simonw/til/blob/main/sqlite/blob-literals.md) - 2020-07-29
 * [Enabling WAL mode for SQLite database files](https://github.com/simonw/til/blob/main/sqlite/enabling-wal-mode.md) - 2020-08-09
+* [Compiling the SQLite spellfix.c module on macOS](https://github.com/simonw/til/blob/main/sqlite/compile-spellfix-osx.md) - 2020-09-19
+* [Figuring out if a text value in SQLite is a valid integer or float](https://github.com/simonw/til/blob/main/sqlite/text-value-is-integer-or-float.md) - 2020-09-27
 
 ## presenting
 
@@ -80,6 +87,7 @@ Search these TILs at https://til.simonwillison.net/
 
 * [Accessing repository dependencies in the GitHub GraphQL API](https://github.com/simonw/til/blob/main/github/dependencies-graphql-api.md) - 2020-04-30
 * [Paginating through the GitHub GraphQL API with Python](https://github.com/simonw/til/blob/main/github/graphql-pagination-python.md) - 2020-07-09
+* [Searching for repositories by topic using the GitHub GraphQL API](https://github.com/simonw/til/blob/main/github/graphql-search-topics.md) - 2020-10-09
 
 ## node
 
@@ -114,6 +122,8 @@ Search these TILs at https://til.simonwillison.net/
 * [Working around the size limit for nodeValue in the DOM](https://github.com/simonw/til/blob/main/javascript/working-around-nodevalue-size-limit.md) - 2020-08-21
 * [Dynamically loading multiple assets with a callback](https://github.com/simonw/til/blob/main/javascript/dynamically-loading-assets.md) - 2020-08-21
 * [Minifying JavaScript with npx uglify-js](https://github.com/simonw/til/blob/main/javascript/minifying-uglify-npx.md) - 2020-08-30
+* [Manipulating query strings with URLSearchParams](https://github.com/simonw/til/blob/main/javascript/manipulating-query-params.md) - 2020-10-04
+* [Writing JavaScript that responds to media queries](https://github.com/simonw/til/blob/main/javascript/javascript-that-responds-to-media-queries.md) - 2020-10-21
 
 ## django
 
@@ -127,6 +137,7 @@ Search these TILs at https://til.simonwillison.net/
 
 * [Packaging a Python CLI tool for Homebrew](https://github.com/simonw/til/blob/main/homebrew/packaging-python-cli-for-homebrew.md) - 2020-08-11
 * [Browsing your local git checkout of homebrew-core](https://github.com/simonw/til/blob/main/homebrew/homebrew-core-local-git-checkout.md) - 2020-08-27
+* [Upgrading Python Homebrew packages using pip](https://github.com/simonw/til/blob/main/homebrew/upgrading-python-homebrew-packages.md) - 2020-10-14
 
 ## zsh
 
@@ -148,6 +159,7 @@ Search these TILs at https://til.simonwillison.net/
 ## linux
 
 * [Piping echo to a file owned by root using sudo and tee](https://github.com/simonw/til/blob/main/linux/echo-pipe-to-file-su.md) - 2020-08-24
+* [Basic strace to see what a process is doing](https://github.com/simonw/til/blob/main/linux/basic-strace.md) - 2020-09-07
 
 ## jq
 
@@ -156,4 +168,26 @@ Search these TILs at https://til.simonwillison.net/
 ## bash
 
 * [Looping over comma-separated values in Bash](https://github.com/simonw/til/blob/main/bash/loop-over-csv.md) - 2020-09-01
+* [Escaping strings in Bash using !:q](https://github.com/simonw/til/blob/main/bash/escaping-a-string.md) - 2020-10-01
+
+## typescript
+
+* [Very basic tsc usage](https://github.com/simonw/til/blob/main/typescript/basic-tsc.md) - 2020-09-06
+
+## aws
+
+* [Display EC2 instance costs per month](https://github.com/simonw/til/blob/main/aws/instance-costs-per-month.md) - 2020-09-06
+
+## jinja
+
+* [Turning on Jinja autoescaping when using Template() directly](https://github.com/simonw/til/blob/main/jinja/autoescape-template.md) - 2020-09-18
+
+## selenium
+
+* [Installing Selenium for Python on macOS with ChromeDriver](https://github.com/simonw/til/blob/main/selenium/selenium-python-macos.md) - 2020-10-02
+* [Using async/await in JavaScript in Selenium](https://github.com/simonw/til/blob/main/selenium/async-javascript-in-selenium.md) - 2020-10-02
+
+## digitalocean
+
+* [Running Datasette on DigitalOcean App Platform](https://github.com/simonw/til/blob/main/digitalocean/datasette-on-digitalocean-app-platform.md) - 2020-10-06
 <!-- index ends -->

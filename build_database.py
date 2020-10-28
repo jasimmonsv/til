@@ -83,6 +83,7 @@ def build_database(repo_path):
                 else:
                     print("  sleeping 60s")
                     time.sleep(60)
+                    retries += 1
             else:
                 assert False, "Could not render {} - last response was {}".format(
                     path, response.headers
@@ -90,8 +91,10 @@ def build_database(repo_path):
         record.update(all_times[path])
         with db.conn:
             table.upsert(record, alter=True)
-    if "til_fts" not in db.table_names():
-        table.enable_fts(["title", "body"])
+
+    table.enable_fts(
+        ["title", "body"], tokenize="porter", create_triggers=True, replace=True
+    )
 
 
 if __name__ == "__main__":
