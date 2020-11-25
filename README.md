@@ -4,7 +4,7 @@ My Today I Learned snippets. Inspired by [jbranchaud/til](https://github.com/jbr
 
 Search these TILs at https://til.simonwillison.net/
 
-<!-- count starts -->24<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
+<!-- count starts -->25<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
 
 <!-- index starts -->
 ## python
@@ -41,6 +41,7 @@ Search these TILs at https://til.simonwillison.net/
 
 * [Looping over comma-separated values in Bash](https://github.com/simonw/til/blob/main/bash/loop-over-csv.md) - 2020-09-01
 * [Escaping strings in Bash using !:q](https://github.com/simonw/til/blob/main/bash/escaping-a-string.md) - 2020-10-01
+* [Test operators](https://github.com/simonw/til/blob/main/bash/test-operators.md) - 2020-11-25
 
 ## github
 
