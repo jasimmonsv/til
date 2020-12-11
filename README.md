@@ -4,7 +4,7 @@ My Today I Learned snippets. Inspired by [jbranchaud/til](https://github.com/jbr
 
 Search these TILs at https://til.simonwillison.net/
 
-<!-- count starts -->25<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
+<!-- count starts -->26<!-- count ends --> TILs so far. <a href="https://til.simonwillison.net/til/feed.atom">Atom feed here</a>.
 
 <!-- index starts -->
 ## python
@@ -45,5 +45,9 @@ Search these TILs at https://til.simonwillison.net/
 
 ## github
 
-* [Where to find Github personall access tokens](https://github.com/simonw/til/blob/main/github/github-personal-access-tokens.md) - 2020-10-28
+* [Where to find Github personal access tokens](https://github.com/simonw/til/blob/main/github/github-personal-access-tokens.md) - 2020-10-28
+
+## CCNA
+
+* [Cisco defined steps to initialize a Router](https://github.com/simonw/til/blob/main/CCNA/router-init.md) - 2020-12-10
 <!-- index ends -->
